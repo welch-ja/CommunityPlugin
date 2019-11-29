@@ -1,0 +1,93 @@
+{	
+	"CommunitySettings":{
+		"SideMenuOpenByDefault": "False",
+		"TestServer": "TEBE11177289",
+		"SuperAdminRun": "False",
+		"Permission": {
+			"AllAccess": [
+				"SideMenu",
+				"AutomateInputFormSet",
+				"HCAutomate",
+				"KickEveryoneOut",
+				"OpeneFolderDocument",
+				"VirtualFields",
+				"Doorbell",
+				"BackAndForward",
+				"OpenReadOnly",
+				"GridSearch"
+			]
+		},
+		"Links": {
+			"Loan Officer": {
+				"EFolder": {
+					"Credit Report": "Credit Report"
+				},
+				"Email": {
+
+				},
+				"Form": {
+					"Trust Account": "Trust Account"
+				},
+				"Internet": {
+					"Arch": "https://ratestar.archmi.com/quote/#/login",
+					"Essent": "https://www.essent.us/"
+				},
+				"Popup": {
+					"2015 Itemization": "2015 Itemization"
+				},
+				"Pricing": {
+					"Optimal Blue": "https://www2.optimalblue.com/"
+				},
+				"Print": {
+
+				},
+				"Service": {
+					"Access Lenders": "Lenders"
+				}
+			},
+			"Default": {
+				"EFolder": {
+					"Credit Report": "Credit Report"
+				},
+				"Email": {
+
+				},
+				"Form": {
+					"Trust Account": "Trust Account"
+				},
+				"Internet": {
+					"Arch": "https://ratestar.archmi.com/quote/#/login",
+					"Essent": "https://www.essent.us/"
+				},
+				"Popup": {
+					"2015 Itemization": "2015 Itemization"
+				},
+				"Pricing": {
+					"Optimal Blue": "https://www2.optimalblue.com/"
+				},
+				"Print": {
+
+				},
+				"Service": {
+					"Access Lenders": "Lenders"
+				}
+			}
+		},
+		"LoanInformation": {
+			"Loan Officer": {
+				"3": "",
+				"VASUMM.X23": "",
+				"1401": "",
+				"19": "",
+				"799": ""
+			},
+			"Default": {
+				"3": "",
+				"VASUMM.X23": "",
+				"1401": "",
+				"19": "",
+				"799": ""
+			}
+		}
+	}
+}
