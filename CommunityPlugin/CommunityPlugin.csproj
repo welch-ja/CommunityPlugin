@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{53BEE5EC-C6E7-43F9-B6EC-0366A3A372D7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CommunityPlugin</RootNamespace>
+    <AssemblyName>CommunityPlugin</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>false</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ABCpdf">
+      <HintPath>..\..\..\..\Downloads\SideMenu\bin\Debug\ABCpdf.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.Words">
+      <HintPath>..\..\..\..\Downloads\SideMenu\bin\Debug\Aspose.Words.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.SHDocVw">
+      <HintPath>..\..\..\..\Downloads\SideMenu\bin\Debug\AxInterop.SHDocVw.dll</HintPath>
+    </Reference>
+    <Reference Include="Client">
+      <HintPath>..\..\..\..\Downloads\SideMenu\bin\Debug\Client.dll</HintPath>
+    </Reference>
+    <Reference Include="ClientCommon">
+      <HintPath>..\..\..\..\Downloads\SideMenu\bin\Debug\ClientCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="ClientServer">
+      <HintPath>..\..\..\..\Downloads\SideMenu\bin\Debug\ClientServer.dll</HintPath>
+    </Reference>
+    <Reference Include="ClientSession">
+      <HintPath>..\..\..\..\Downloads\SideMenu\bin\Debug\ClientSession.dll</HintPath>
+    </Reference>
+    <Reference Include="DataAccess">
+      <HintPath>..\..\..\..\Downloads\SideMenu\bin\Debug\DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentConverter">
+      <HintPath>..\..\..\..\Downloads\SideMenu\bin\Debug\DocumentConverter.dll</HintPath>
+    </Reference>
+    <Reference Include="eFolder">
+      <HintPath>..\..\..\..\Desktop\dlls\eFolder.dll</HintPath>
+    </Reference>
+    <Reference Include="Elli.AdvCode">
+      <HintPath>..\..\..\..\Downloads\SideMenu\bin\Debug\Elli.AdvCode.dll</HintPath>
+    </Reference>
+    <Reference Include="Elli.BusinessRules">
+      <HintPath>..\..\..\..\Downloads\SideMenu\bin\Debug\Elli.BusinessRules.dll</HintPath>
+    </Reference>
+    <Reference Include="Elli.Common">
+      <HintPath>..\..\..\..\Downloads\SideMenu\bin\Debug\Elli.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Elli.Data">
+      <HintPath>..\..\..\..\Downloads\SideMenu\bin\Debug\Elli.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Elli.Data.MongoDB">
+      <HintPath>..\..\..\..\Downloads\SideMenu\bin\Debug\Elli.Data.MongoDB.dll</HintPath>
+    </Reference>
+    <Reference Include="Elli.DirectoryServices.Contracts">
+      <HintPath>..\..\..\..\Downloads\SideMenu\bin\Debug\Elli.DirectoryServices.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Elli.DirectoryServices.Proxies">
+      <HintPath>..\..\..\..\Downloads\SideMenu\bin\Debug\Elli.DirectoryServices.Proxies.dll</HintPath>
+    </Reference>
+    <Reference Include="Elli.Domain">
+      <HintPath>..\..\..\..\Downloads\SideMenu\bin\Debug\Elli.Domain.dll</HintPath>
+    </Reference>
+    <Reference Include="Elli.ElliEnum">
+      <HintPath>..\..\..\..\Downloads\SideMenu\bin\Debug\Elli.ElliEnum.dll</HintPath>
+    </Reference>
+    <Reference Include="Elli.Identity">
+      <HintPath>..\..\..\..\Downloads\SideMenu\bin\Debug\Elli.Identity.dll</HintPath>
+    </Reference>
+    <Reference Include="Elli.Interface">
+      <HintPath>..\..\..\..\Downloads\SideMenu\bin\Debug\Elli.Interface.dll</HintPath>
+    </Reference>
+    <Reference Include="Elli.Log">
+      <HintPath>..\..\..\..\Downloads\SideMenu\bin\Debug\Elli.Log.dll</HintPath>
+    </Reference>
+    <Reference Include="Elli.MessageQueues">
+      <HintPath>..\..\..\..\Downloads\SideMenu\bin\Debug\Elli.MessageQueues.dll</HintPath>
+    </Reference>
+    <Reference Include="Elli.Metrics">
+      <HintPath>..\..\..\..\Downloads\SideMenu\bin\Debug\Elli.Metrics.dll</HintPath>
+    </Reference>
+    <Reference Include="Elli.Server.Remoting">
+      <HintPath>..\..\..\..\Downloads\SideMenu\bin\Debug\Elli.Server.Remoting.dll</HintPath>
+    </Reference>
+    <Reference Include="Elli.Service">
+      <HintPath>..\..\..\..\Downloads\SideMenu\bin\Debug\Elli.Service.dll</HintPath>
+    </Reference>
+    <Reference Include="Elli.Service.Common">
+      <HintPath>..\..\..\..\Downloads\SideMenu\bin\Debug\Elli.Service.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="EMBAM15">
+      <HintPath>..\..\..\..\Downloads\SideMenu\bin\Debug\EMBAM15.dll</HintPath>
+    </Reference>
+    <Reference Include="EMCommon">
+      <HintPath>..\..\..\..\Downloads\SideMenu\bin\Debug\EMCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="EMLoanUtils15">
+      <HintPath>..\..\..\..\Downloads\SideMenu\bin\Debug\EMLoanUtils15.dll</HintPath>
+    </Reference>
+    <Reference Include="EncompassAutomation">
+      <HintPath>..\..\..\..\Downloads\SideMenu\bin\Debug\EncompassAutomation.dll</HintPath>
+    </Reference>
+    <Reference Include="EncompassObjects">
+      <HintPath>..\..\..\..\Downloads\SideMenu\bin\Debug\EncompassObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="MainUI">
+      <HintPath>..\..\..\..\..\SmartClientCache\Apps\UAC\Ellie Mae\xIHR5EqGa7zPnRG0YpD5z4TPAB0=\Encompass360\MainUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Device" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIElements, Version=4.0.0.0, Culture=neutral, PublicKeyToken=d11ef57bba4acf91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Downloads\SideMenu\bin\Debug\UIElements.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Non Native Modifications\BackAndForward.cs" />
+    <Compile Include="Non Native Modifications\FormWrapper.cs" />
+    <Compile Include="Non Native Modifications\GridSearch.cs" />
+    <Compile Include="Non Native Modifications\Pipeline\OpenReadOnly.cs" />
+    <Compile Include="Non Native Modifications\SideMenu\Controls\CustomLinkLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Non Native Modifications\SideMenu\Controls\MenuButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Non Native Modifications\SideMenu\Controls\MenuPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Non Native Modifications\SideMenu\Controls\MenuPanelSection.cs" />
+    <Compile Include="Non Native Modifications\SideMenu\SideMenu.cs" />
+    <Compile Include="Non Native Modifications\SideMenu\SideMenuUI.cs" />
+    <Compile Include="Non Native Modifications\SideMenu\UserControls\FieldLookup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Non Native Modifications\SideMenu\UserControls\LinksAndResources.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Non Native Modifications\SideMenu\UserControls\LoanInformation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Non Native Modifications\TopMenu\Impersonate.cs" />
+    <Compile Include="Non Native Modifications\TopMenu\Impersonate_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Non Native Modifications\TopMenu\Impersonate_Form.Designer.cs">
+      <DependentUpon>Impersonate_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Non Native Modifications\TopMenu\MenuItemBase.cs" />
+    <Compile Include="Non Native Modifications\TopMenu\SettingExtract.cs" />
+    <Compile Include="Non Native Modifications\TopMenu\SettingExtract_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Non Native Modifications\TopMenu\SettingExtract_Form.Designer.cs">
+      <DependentUpon>SettingExtract_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Non Native Modifications\TopMenu\TopMenuBase.cs" />
+    <Compile Include="Objects\Args\BorrowerPairChangedEventArgs.cs" />
+    <Compile Include="Objects\Args\FormOpenedArgs.cs" />
+    <Compile Include="Objects\Enums\LinkType.cs" />
+    <Compile Include="Objects\Extension\WindowsFormsExtensions.cs" />
+    <Compile Include="Objects\Helpers\CDOHelper.cs" />
+    <Compile Include="Objects\Helpers\EncompassHelper.cs" />
+    <Compile Include="Objects\Interface\AbstractControlDescriptionProvider.cs" />
+    <Compile Include="Objects\Interface\IBeforeCommit.cs" />
+    <Compile Include="Objects\Interface\IBeforeMilestoneCompleted.cs" />
+    <Compile Include="Objects\Interface\IBorrowerPairChanged.cs" />
+    <Compile Include="Objects\Interface\ICommitted.cs" />
+    <Compile Include="Objects\Interface\IDataExchangeReceived.cs" />
+    <Compile Include="Objects\Interface\IFieldChange.cs" />
+    <Compile Include="Objects\Interface\ILoanMenuControl.cs" />
+    <Compile Include="Objects\Interface\ILogEntryAdded.cs" />
+    <Compile Include="Objects\Interface\ILogEntryChanged.cs" />
+    <Compile Include="Objects\Interface\ILogEntryRemoved.cs" />
+    <Compile Include="Objects\Interface\IMenuItemBase.cs" />
+    <Compile Include="Objects\Interface\IMilestoneCompleted.cs" />
+    <Compile Include="Objects\Interface\INativeFormLoaded.cs" />
+    <Compile Include="Objects\Interface\IFormLoaded.cs" />
+    <Compile Include="Objects\Interface\ILoanClosing.cs" />
+    <Compile Include="Objects\Interface\ILoanOpened.cs" />
+    <Compile Include="Objects\Interface\ILogin.cs" />
+    <Compile Include="Objects\Interface\InterfaceHelper.cs" />
+    <Compile Include="Objects\Interface\IPlugin.cs" />
+    <Compile Include="Objects\Interface\ITabChanged.cs" />
+    <Compile Include="Objects\Interface\LoanMenuControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Objects\Models\CDO.cs" />
+    <Compile Include="Objects\Models\EncompassFieldInfo.cs" />
+    <Compile Include="Objects\Models\HomeCounselor.cs" />
+    <Compile Include="Objects\Models\PluginAccessRight.cs" />
+    <Compile Include="Objects\Models\SearchResultField.cs" />
+    <Compile Include="Objects\Models\SettingsCDO.cs" />
+    <Compile Include="Objects\Plugin.cs" />
+    <Compile Include="Objects\ImplementationException.cs" />
+    <Compile Include="Objects\Logger.cs" />
+    <Compile Include="Objects\PluginAccess.cs" />
+    <Compile Include="Objects\Plugins.cs" />
+    <Compile Include="Objects\WebRequest.cs" />
+    <Compile Include="PluginEntry.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Standard Plugins\AutomateInputFormSet.cs" />
+    <Compile Include="Non Native Modifications\Doorbell.cs" />
+    <Compile Include="Standard Plugins\Example.cs" />
+    <Compile Include="Standard Plugins\Forms\CodebaseAssemblies\SettingsExtract\Attach_Sample.cs" />
+    <Compile Include="Standard Plugins\Forms\CodebaseAssemblies\SettingsExtract\Form_Example.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Standard Plugins\HCAutomate.cs" />
+    <Compile Include="Standard Plugins\KickEveryoneOut.cs" />
+    <Compile Include="Standard Plugins\LiveTestUser.cs" />
+    <Compile Include="Standard Plugins\OpeneFolderDocument.cs" />
+    <Compile Include="Standard Plugins\VirtualFields.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Non Native Modifications\SideMenu\UserControls\FieldLookup.resx">
+      <DependentUpon>FieldLookup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Non Native Modifications\SideMenu\UserControls\LoanInformation.resx">
+      <DependentUpon>LoanInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Non Native Modifications\TopMenu\Impersonate_Form.resx">
+      <DependentUpon>Impersonate_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Non Native Modifications\TopMenu\SettingExtract_Form.resx">
+      <DependentUpon>SettingExtract_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Resources\Exit.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Out.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Forward.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
