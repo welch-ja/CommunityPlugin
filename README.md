@@ -68,7 +68,9 @@ This is an option to setup a folder inside your InputFormSets Base Folder as 'Pe
 - Default
 
 ## SideMenu: 
-This is an option to give users a static menu that is always open inside a loan. Everything in this plugin was created to easily expand upon.
+This is an option to give users a static menu that is always open inside a loan. Everything in this plugin was created to easily expand
+upon.
+
 ![alt text](SideMenu.PNG)
 
 ## FieldLookup: 
