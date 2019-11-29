@@ -32,16 +32,28 @@ namespace CommunityPlugin.Objects
             }
 
             if (typeof(ILoanOpened).IsAssignableFrom(GetType()))
+            {
+                EncompassApplication.LoanOpened -= Base_LoanOpened;
                 EncompassApplication.LoanOpened += Base_LoanOpened;
+            }
 
             if (typeof(ILogin).IsAssignableFrom(GetType()) || typeof(ITabChanged).IsAssignableFrom(GetType()))
+            {
+                EncompassApplication.Login -= Base_Login;
                 EncompassApplication.Login += Base_Login;
+            }
 
             if (typeof(INativeFormLoaded).IsAssignableFrom(GetType()))
+            {
+                FormWrapper.FormOpened -= Base_NativeFormLoaded;
                 FormWrapper.FormOpened += Base_NativeFormLoaded;
+            }
 
             if (typeof(IDataExchangeReceived).IsAssignableFrom(GetType()))
+            {
+                EncompassApplication.Session.DataExchange.DataReceived -= Base_DataExchangeReceived;
                 EncompassApplication.Session.DataExchange.DataReceived += Base_DataExchangeReceived;
+            }
         }
 
 
@@ -57,31 +69,58 @@ namespace CommunityPlugin.Objects
                 return;
 
             if (typeof(IBeforeCommit).IsAssignableFrom(GetType()))
+            {
+                loan.BeforeCommit -= Base_BeforeCommit;
                 loan.BeforeCommit += Base_BeforeCommit;
+            }
 
             if (typeof(IFieldChange).IsAssignableFrom(GetType()))
+            {
+                loan.FieldChange -= Base_FieldChange;
                 loan.FieldChange += Base_FieldChange;
+            }
 
             if (typeof(ICommitted).IsAssignableFrom(GetType()))
+            {
+                loan.Committed -= Base_Committed;
                 loan.Committed += Base_Committed;
+            }
 
             if (typeof(IBeforeCommit).IsAssignableFrom(GetType()))
+            {
+                loan.BeforeCommit -= Base_BeforeCommit;
                 loan.BeforeCommit += Base_BeforeCommit;
+            }
 
             if (typeof(ILogEntryAdded).IsAssignableFrom(GetType()))
+            {
+                loan.LogEntryAdded -= Base_LogEntryAdded;
                 loan.LogEntryAdded += Base_LogEntryAdded;
+            }
 
             if (typeof(ILogEntryChanged).IsAssignableFrom(GetType()))
+            {
+                loan.LogEntryChange -= Base_LogEntryChanged;
                 loan.LogEntryChange += Base_LogEntryChanged;
+            }
 
             if (typeof(ILogEntryRemoved).IsAssignableFrom(GetType()))
+            {
+                loan.LogEntryRemoved -= Base_LogEntryRemoved;
                 loan.LogEntryRemoved += Base_LogEntryRemoved;
+            }
 
             if (typeof(IBeforeMilestoneCompleted).IsAssignableFrom(GetType()))
+            {
+                loan.BeforeMilestoneCompleted -= Base_BeforeMilestoneCompleted;
                 loan.BeforeMilestoneCompleted += Base_BeforeMilestoneCompleted;
+            }
 
             if (typeof(IMilestoneCompleted).IsAssignableFrom(GetType()))
+            {
+                loan.MilestoneCompleted -= Base_MilestoneCompleted;
                 loan.MilestoneCompleted += Base_MilestoneCompleted;
+            }
 
             //if (typeof(IBorrowerPairChanged).IsAssignableFrom(GetType()))
             //    EncompassHelper.LoanDataManager.LoanData.BorrowerPairChanged += Base_BorrowerPairChanged;
