@@ -21,35 +21,43 @@
 - OpeneFolderDocument
 - VirtualFields
 - SideMenu
+- GridSearch
+- BackAndForward
 
+
+## BackAndForward: 
+This is an option you will now see in the Forms/Tools/Services section to easily navigate between forms that have been opened already.
+![alt text](Navigation.PNG)
+
+## GridSearch: 
+This is an option you will now see in the Settings Menu to search any grid that pops up, self explanitory.
+![alt text](GridSearch.PNG)
 
 ## OpenReadOnly: 
 This is an option you will now see in the Pipeline Context (right click) menu to Open any Loan Read only.
-![alt text]()
+![alt text](readonly.png)
 
 ## Impersonate: 
 This is an option you will see in the Community Top Menu to impersonate a user as a Super Admin.
-![alt text]()
+![alt text](TopMenu.png)
+![alt text](Impersonate.png)
 
 ## SettingExtract: 
 This is an option you will see in the Community Top Menu to extract all settings to a zip file.
-![alt text]()
+![alt text](TopMenu.png)
+![alt text](Settings.png)
 
 ## HCAutomate: 
 This is an option to Automate the closest 10 Home Counseling Providers triggerd by FR0108.
-![alt text]()
 
 ## OpeneFolderDocument: 
 This is an option to set custom field [CX.OPENDOCUMENT] to any placeholder in the efolder documents and the document will open.
-![alt text]()
 
 ## VirtualFields: 
-This is an option to set custom field [CX.OPENDOCUMENT] to any placeholder in the efolder documents and the document will open.
-![alt text]()
+To be Described.
 
 ## KickEveryoneOut: 
 This is an option to created by Nikolai (EncompDev.com) to kick every non superadmin user out at 4AM and close Encompass.
-![alt text]()
 
 ## AutomateInputFormSet: 
 This is an option to setup a folder inside your InputFormSets Base Folder as 'Persona'. Inside you can create a workflow to apply IFS when a loan opens. You can use all of these prefixes and they apply in this order: 
@@ -58,23 +66,19 @@ This is an option to setup a folder inside your InputFormSets Base Folder as 'Pe
 - Milestone_{MilestoneName}_{Persona}
 - Persona_{Persona}
 - Default
-![alt text]()
 
 ## SideMenu: 
 This is an option to give users a static menu that is always open inside a loan. Everything in this plugin was created to easily expand upon.
-![alt text]()
+![alt text](SideMenu.PNG)
 
 ## FieldLookup: 
 This is a Tool inside the Loan Menu to lookup a field by id, description or value.
-![alt text]()
 
 ## LoanInformation: 
 This is a Tool inside the Loan Menu that you can customize inside of CommunitySettings.json to let different personas see specific fields all the time in a loan file.
-![alt text]()
 
 ## LinksAndResources: 
 This is a Tool you can customize inside of CommunitySettings.json to let users click links, open eFolder Documents, etc.
-![alt text]()
 
 
 
