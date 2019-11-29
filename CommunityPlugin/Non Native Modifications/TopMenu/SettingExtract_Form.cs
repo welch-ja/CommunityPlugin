@@ -86,7 +86,7 @@ namespace CommunityPlugin.Non_Native_Modifications.TopMenu
         private void AddSingle(string Title, string FileName, byte[] data, ZipArchive Archive, int Progress, BackgroundWorker worker)
         {
             lblStatus.Text = Title;
-            AddEntry($"{Title}", data, Archive);
+            AddEntry($"{FileName}", data, Archive);
             worker.ReportProgress(Progress);
         }
 
