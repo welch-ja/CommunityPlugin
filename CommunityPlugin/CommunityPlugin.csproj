@@ -155,6 +155,7 @@
     <Compile Include="Non Native Modifications\FormWrapper.cs" />
     <Compile Include="Non Native Modifications\GridSearch.cs" />
     <Compile Include="Non Native Modifications\Pipeline\OpenReadOnly.cs" />
+    <Compile Include="Non Native Modifications\Pipeline\PipelineColor.cs" />
     <Compile Include="Non Native Modifications\SideMenu\Controls\CustomLinkLabel.cs">
       <SubType>Component</SubType>
     </Compile>
