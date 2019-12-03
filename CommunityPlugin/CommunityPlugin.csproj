@@ -147,10 +147,11 @@
     <Reference Include="System.Xml" />
     <Reference Include="UIElements, Version=4.0.0.0, Culture=neutral, PublicKeyToken=d11ef57bba4acf91, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Downloads\SideMenu\bin\Debug\UIElements.dll</HintPath>
+      <HintPath>..\..\..\..\..\Downloads\SideMenu\bin\Debug\UIElements.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Non Native Modifications\AlphaAlerts.cs" />
     <Compile Include="Non Native Modifications\BackAndForward.cs" />
     <Compile Include="Non Native Modifications\FormWrapper.cs" />
     <Compile Include="Non Native Modifications\GridSearch.cs" />
