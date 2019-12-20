@@ -1,11 +1,13 @@
 ﻿using CommunityPlugin.Objects;
 using CommunityPlugin.Objects.Helpers;
 using CommunityPlugin.Objects.Interface;
+using CommunityPlugin.Objects.Models;
 using CommunityPlugin.Properties;
 using EllieMae.EMLite.DataEngine;
 using EllieMae.EMLite.UI;
 using EllieMae.Encompass.Automation;
 using EllieMae.Encompass.Client;
+using Newtonsoft.Json;
 using System;
 using System.Windows.Forms;
 
@@ -105,7 +107,8 @@ namespace CommunityPlugin.Non_Native_Modifications
 
         public override void DataExchangeReceived(object sender, DataExchangeEventArgs e)
         {
-            if (!Hide)
+            RuleLockInfo info = JsonConvert.DeserializeObject<RuleLockInfo>(e.Data.ToString());
+            if (!Hide && info == null)
             {
                 Hide = false;
                 bool exit = e.Data.ToString().Contains("Exit");
