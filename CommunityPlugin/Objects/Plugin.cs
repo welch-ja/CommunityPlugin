@@ -1,4 +1,5 @@
 ﻿using CommunityPlugin.Non_Native_Modifications;
+using CommunityPlugin.Objects.Args;
 using CommunityPlugin.Objects.Interface;
 using EllieMae.Encompass.Automation;
 using EllieMae.Encompass.BusinessObjects;
@@ -292,11 +293,11 @@ namespace CommunityPlugin.Objects
         }
 
 
-        public virtual void NativeFormLoaded(object sender, EventArgs e)
+        public virtual void NativeFormLoaded(object sender, FormOpenedArgs e)
         {
             throw new ImplementationException(GetType().Name, nameof(INativeFormLoaded), nameof(NativeFormLoaded));
         }
-        private void Base_NativeFormLoaded(object sender, EventArgs e)
+        private void Base_NativeFormLoaded(object sender, FormOpenedArgs e)
         {
             try
             {

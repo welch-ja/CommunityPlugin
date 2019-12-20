@@ -32,106 +32,110 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="ABCpdf">
-      <HintPath>..\..\..\..\Downloads\SideMenu\bin\Debug\ABCpdf.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\SmartClientCache\Apps\UAC\Ellie Mae\xIHR5EqGa7zPnRG0YpD5z4TPAB0=\Encompass360\ABCpdf.dll</HintPath>
     </Reference>
     <Reference Include="Aspose.Words">
-      <HintPath>..\..\..\..\Downloads\SideMenu\bin\Debug\Aspose.Words.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\SmartClientCache\Apps\UAC\Ellie Mae\xIHR5EqGa7zPnRG0YpD5z4TPAB0=\Encompass360\Aspose.Words.dll</HintPath>
     </Reference>
     <Reference Include="AxInterop.SHDocVw">
-      <HintPath>..\..\..\..\Downloads\SideMenu\bin\Debug\AxInterop.SHDocVw.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\SmartClientCache\Apps\UAC\Ellie Mae\xIHR5EqGa7zPnRG0YpD5z4TPAB0=\Encompass360\AxInterop.SHDocVw.dll</HintPath>
     </Reference>
     <Reference Include="Client">
-      <HintPath>..\..\..\..\Downloads\SideMenu\bin\Debug\Client.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\SmartClientCache\Apps\UAC\Ellie Mae\xIHR5EqGa7zPnRG0YpD5z4TPAB0=\Encompass360\Client.dll</HintPath>
     </Reference>
     <Reference Include="ClientCommon">
-      <HintPath>..\..\..\..\Downloads\SideMenu\bin\Debug\ClientCommon.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\SmartClientCache\Apps\UAC\Ellie Mae\xIHR5EqGa7zPnRG0YpD5z4TPAB0=\Encompass360\ClientCommon.dll</HintPath>
     </Reference>
     <Reference Include="ClientServer">
-      <HintPath>..\..\..\..\Downloads\SideMenu\bin\Debug\ClientServer.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\SmartClientCache\Apps\UAC\Ellie Mae\xIHR5EqGa7zPnRG0YpD5z4TPAB0=\Encompass360\ClientServer.dll</HintPath>
     </Reference>
     <Reference Include="ClientSession">
-      <HintPath>..\..\..\..\Downloads\SideMenu\bin\Debug\ClientSession.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\SmartClientCache\Apps\UAC\Ellie Mae\xIHR5EqGa7zPnRG0YpD5z4TPAB0=\Encompass360\ClientSession.dll</HintPath>
     </Reference>
     <Reference Include="DataAccess">
-      <HintPath>..\..\..\..\Downloads\SideMenu\bin\Debug\DataAccess.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\SmartClientCache\Apps\UAC\Ellie Mae\xIHR5EqGa7zPnRG0YpD5z4TPAB0=\Encompass360\DataAccess.dll</HintPath>
     </Reference>
     <Reference Include="DocumentConverter">
-      <HintPath>..\..\..\..\Downloads\SideMenu\bin\Debug\DocumentConverter.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\SmartClientCache\Apps\UAC\Ellie Mae\xIHR5EqGa7zPnRG0YpD5z4TPAB0=\Encompass360\DocumentConverter.dll</HintPath>
     </Reference>
     <Reference Include="eFolder">
-      <HintPath>..\..\..\..\Desktop\dlls\eFolder.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\SmartClientCache\Apps\UAC\Ellie Mae\xIHR5EqGa7zPnRG0YpD5z4TPAB0=\Encompass360\eFolder.dll</HintPath>
     </Reference>
     <Reference Include="Elli.AdvCode">
-      <HintPath>..\..\..\..\Downloads\SideMenu\bin\Debug\Elli.AdvCode.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\SmartClientCache\Apps\UAC\Ellie Mae\xIHR5EqGa7zPnRG0YpD5z4TPAB0=\Encompass360\Elli.AdvCode.dll</HintPath>
     </Reference>
     <Reference Include="Elli.BusinessRules">
-      <HintPath>..\..\..\..\Downloads\SideMenu\bin\Debug\Elli.BusinessRules.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\SmartClientCache\Apps\UAC\Ellie Mae\xIHR5EqGa7zPnRG0YpD5z4TPAB0=\Encompass360\Elli.BusinessRules.dll</HintPath>
     </Reference>
     <Reference Include="Elli.Common">
-      <HintPath>..\..\..\..\Downloads\SideMenu\bin\Debug\Elli.Common.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\SmartClientCache\Apps\UAC\Ellie Mae\xIHR5EqGa7zPnRG0YpD5z4TPAB0=\Encompass360\Elli.Common.dll</HintPath>
     </Reference>
     <Reference Include="Elli.Data">
-      <HintPath>..\..\..\..\Downloads\SideMenu\bin\Debug\Elli.Data.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\SmartClientCache\Apps\UAC\Ellie Mae\xIHR5EqGa7zPnRG0YpD5z4TPAB0=\Encompass360\Elli.Data.dll</HintPath>
     </Reference>
     <Reference Include="Elli.Data.MongoDB">
-      <HintPath>..\..\..\..\Downloads\SideMenu\bin\Debug\Elli.Data.MongoDB.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\SmartClientCache\Apps\UAC\Ellie Mae\xIHR5EqGa7zPnRG0YpD5z4TPAB0=\Encompass360\Elli.Data.MongoDB.dll</HintPath>
     </Reference>
     <Reference Include="Elli.DirectoryServices.Contracts">
-      <HintPath>..\..\..\..\Downloads\SideMenu\bin\Debug\Elli.DirectoryServices.Contracts.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\SmartClientCache\Apps\UAC\Ellie Mae\xIHR5EqGa7zPnRG0YpD5z4TPAB0=\Encompass360\Elli.DirectoryServices.Contracts.dll</HintPath>
     </Reference>
     <Reference Include="Elli.DirectoryServices.Proxies">
-      <HintPath>..\..\..\..\Downloads\SideMenu\bin\Debug\Elli.DirectoryServices.Proxies.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\SmartClientCache\Apps\UAC\Ellie Mae\xIHR5EqGa7zPnRG0YpD5z4TPAB0=\Encompass360\Elli.DirectoryServices.Proxies.dll</HintPath>
     </Reference>
     <Reference Include="Elli.Domain">
-      <HintPath>..\..\..\..\Downloads\SideMenu\bin\Debug\Elli.Domain.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\SmartClientCache\Apps\UAC\Ellie Mae\xIHR5EqGa7zPnRG0YpD5z4TPAB0=\Encompass360\Elli.Domain.dll</HintPath>
     </Reference>
     <Reference Include="Elli.ElliEnum">
-      <HintPath>..\..\..\..\Downloads\SideMenu\bin\Debug\Elli.ElliEnum.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\SmartClientCache\Apps\UAC\Ellie Mae\xIHR5EqGa7zPnRG0YpD5z4TPAB0=\Encompass360\Elli.ElliEnum.dll</HintPath>
     </Reference>
     <Reference Include="Elli.Identity">
-      <HintPath>..\..\..\..\Downloads\SideMenu\bin\Debug\Elli.Identity.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\SmartClientCache\Apps\UAC\Ellie Mae\xIHR5EqGa7zPnRG0YpD5z4TPAB0=\Encompass360\Elli.Identity.dll</HintPath>
     </Reference>
     <Reference Include="Elli.Interface">
-      <HintPath>..\..\..\..\Downloads\SideMenu\bin\Debug\Elli.Interface.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\SmartClientCache\Apps\UAC\Ellie Mae\xIHR5EqGa7zPnRG0YpD5z4TPAB0=\Encompass360\Elli.Interface.dll</HintPath>
     </Reference>
     <Reference Include="Elli.Log">
-      <HintPath>..\..\..\..\Downloads\SideMenu\bin\Debug\Elli.Log.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\SmartClientCache\Apps\UAC\Ellie Mae\xIHR5EqGa7zPnRG0YpD5z4TPAB0=\Encompass360\Elli.Log.dll</HintPath>
     </Reference>
     <Reference Include="Elli.MessageQueues">
-      <HintPath>..\..\..\..\Downloads\SideMenu\bin\Debug\Elli.MessageQueues.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\SmartClientCache\Apps\UAC\Ellie Mae\xIHR5EqGa7zPnRG0YpD5z4TPAB0=\Encompass360\Elli.MessageQueues.dll</HintPath>
     </Reference>
     <Reference Include="Elli.Metrics">
-      <HintPath>..\..\..\..\Downloads\SideMenu\bin\Debug\Elli.Metrics.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\SmartClientCache\Apps\UAC\Ellie Mae\xIHR5EqGa7zPnRG0YpD5z4TPAB0=\Encompass360\Elli.Metrics.dll</HintPath>
     </Reference>
     <Reference Include="Elli.Server.Remoting">
-      <HintPath>..\..\..\..\Downloads\SideMenu\bin\Debug\Elli.Server.Remoting.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\SmartClientCache\Apps\UAC\Ellie Mae\xIHR5EqGa7zPnRG0YpD5z4TPAB0=\Encompass360\Elli.Server.Remoting.dll</HintPath>
     </Reference>
     <Reference Include="Elli.Service">
-      <HintPath>..\..\..\..\Downloads\SideMenu\bin\Debug\Elli.Service.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\SmartClientCache\Apps\UAC\Ellie Mae\xIHR5EqGa7zPnRG0YpD5z4TPAB0=\Encompass360\Elli.Service.dll</HintPath>
     </Reference>
     <Reference Include="Elli.Service.Common">
-      <HintPath>..\..\..\..\Downloads\SideMenu\bin\Debug\Elli.Service.Common.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\SmartClientCache\Apps\UAC\Ellie Mae\xIHR5EqGa7zPnRG0YpD5z4TPAB0=\Encompass360\Elli.Service.Common.dll</HintPath>
     </Reference>
     <Reference Include="EMBAM15">
-      <HintPath>..\..\..\..\Downloads\SideMenu\bin\Debug\EMBAM15.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\SmartClientCache\Apps\UAC\Ellie Mae\xIHR5EqGa7zPnRG0YpD5z4TPAB0=\Encompass360\EMBAM15.dll</HintPath>
     </Reference>
     <Reference Include="EMCommon">
-      <HintPath>..\..\..\..\Downloads\SideMenu\bin\Debug\EMCommon.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\SmartClientCache\Apps\UAC\Ellie Mae\xIHR5EqGa7zPnRG0YpD5z4TPAB0=\Encompass360\EMCommon.dll</HintPath>
     </Reference>
     <Reference Include="EMLoanUtils15">
-      <HintPath>..\..\..\..\Downloads\SideMenu\bin\Debug\EMLoanUtils15.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\SmartClientCache\Apps\UAC\Ellie Mae\xIHR5EqGa7zPnRG0YpD5z4TPAB0=\Encompass360\EMLoanUtils15.dll</HintPath>
     </Reference>
     <Reference Include="EncompassAutomation">
-      <HintPath>..\..\..\..\Downloads\SideMenu\bin\Debug\EncompassAutomation.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\SmartClientCache\Apps\UAC\Ellie Mae\xIHR5EqGa7zPnRG0YpD5z4TPAB0=\Encompass360\EncompassAutomation.dll</HintPath>
     </Reference>
     <Reference Include="EncompassObjects">
-      <HintPath>..\..\..\..\Downloads\SideMenu\bin\Debug\EncompassObjects.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\SmartClientCache\Apps\UAC\Ellie Mae\xIHR5EqGa7zPnRG0YpD5z4TPAB0=\Encompass360\EncompassObjects.dll</HintPath>
     </Reference>
     <Reference Include="MainUI">
-      <HintPath>..\..\..\..\..\SmartClientCache\Apps\UAC\Ellie Mae\xIHR5EqGa7zPnRG0YpD5z4TPAB0=\Encompass360\MainUI.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\SmartClientCache\Apps\UAC\Ellie Mae\xIHR5EqGa7zPnRG0YpD5z4TPAB0=\Encompass360\MainUI.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SetupUI, Version=19.4.0.4, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\SmartClientCache\Apps\UAC\Ellie Mae\xIHR5EqGa7zPnRG0YpD5z4TPAB0=\Encompass360\SetupUI.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -147,7 +151,7 @@
     <Reference Include="System.Xml" />
     <Reference Include="UIElements, Version=4.0.0.0, Culture=neutral, PublicKeyToken=d11ef57bba4acf91, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\Downloads\SideMenu\bin\Debug\UIElements.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\SmartClientCache\Apps\UAC\Ellie Mae\xIHR5EqGa7zPnRG0YpD5z4TPAB0=\Encompass360\UIElements.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -157,6 +161,7 @@
     <Compile Include="Non Native Modifications\GridSearch.cs" />
     <Compile Include="Non Native Modifications\Pipeline\OpenReadOnly.cs" />
     <Compile Include="Non Native Modifications\Pipeline\PipelineColor.cs" />
+    <Compile Include="Non Native Modifications\RuleLock.cs" />
     <Compile Include="Non Native Modifications\SideMenu\Controls\CustomLinkLabel.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -196,10 +201,13 @@
     <Compile Include="Non Native Modifications\TopMenu\TopMenuBase.cs" />
     <Compile Include="Objects\Args\BorrowerPairChangedEventArgs.cs" />
     <Compile Include="Objects\Args\FormOpenedArgs.cs" />
+    <Compile Include="Objects\Enums\CloneBizRuleType.cs" />
+    <Compile Include="Objects\Enums\CloneCondition.cs" />
     <Compile Include="Objects\Enums\LinkType.cs" />
     <Compile Include="Objects\Extension\WindowsFormsExtensions.cs" />
     <Compile Include="Objects\Helpers\CDOHelper.cs" />
     <Compile Include="Objects\Helpers\EncompassHelper.cs" />
+    <Compile Include="Objects\Helpers\RuleCDOHelper.cs" />
     <Compile Include="Objects\Interface\AbstractControlDescriptionProvider.cs" />
     <Compile Include="Objects\Interface\IBeforeCommit.cs" />
     <Compile Include="Objects\Interface\IBeforeMilestoneCompleted.cs" />
@@ -225,7 +233,10 @@
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Objects\Models\CDO.cs" />
+    <Compile Include="Objects\Models\CloneBizRuleInfo.cs" />
     <Compile Include="Objects\Models\EncompassFieldInfo.cs" />
+    <Compile Include="Objects\Models\RuleLockCDO.cs" />
+    <Compile Include="Objects\Models\RuleLockInfo.cs" />
     <Compile Include="Objects\Models\HomeCounselor.cs" />
     <Compile Include="Objects\Models\PluginAccessRight.cs" />
     <Compile Include="Objects\Models\SearchResultField.cs" />

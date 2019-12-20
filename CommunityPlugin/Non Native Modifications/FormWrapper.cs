@@ -24,6 +24,15 @@ namespace CommunityPlugin.Non_Native_Modifications
         {
             OpenForms = new HashSet<Form>();
             EncompassForm.Deactivate += EncompassForm_Deactivate;
+            Timer t = new Timer();
+            t.Interval = 1000;
+            t.Enabled = true;
+            t.Tick += T_Tick;
+        }
+
+        private static void T_Tick(object sender, EventArgs e)
+        {
+            RefreshFormList();
         }
 
         private static void EncompassForm_Deactivate(object sender, EventArgs e)
