@@ -22,6 +22,7 @@ namespace CommunityPlugin.Non_Native_Modifications
         private GridView AllDataGrid;
         private GridView Grid;
         private FlowLayoutPanel searchPanel;
+        private bool Loading;
 
         public override void Login(object sender, EventArgs e)
         {
@@ -63,23 +64,27 @@ namespace CommunityPlugin.Non_Native_Modifications
             this.Grid = SettingsForm.AllControls<GridView>().FirstOrDefault<GridView>();
             if (this.Grid == null || !this.Grid.Items.Any<GVItem>())
                 return;
-            this.AllDataGrid = new GridView();
-            foreach (GVItem gvItem in (IEnumerable<GVItem>)this.Grid.Items)
-                this.AllDataGrid.Items.Add(gvItem);
-            Panel control = this.GetControl((Control)this.SettingsForm, "gpHeader") as Panel;
-            if (control == null)
-                return;
-            if (!control.Controls.ContainsKey(this.key))
+            if (!Loading)
             {
-                searchPanel = this.GetSearchPanel(control.Width, this.key);
-                control.Controls.Add((Control)searchPanel);
-                ((IEnumerable<Control>)control.Controls.Find(this.key, true)).FirstOrDefault<Control>().BringToFront();
+                this.AllDataGrid = new GridView();
+                foreach (GVItem gvItem in (IEnumerable<GVItem>)this.Grid.Items)
+                    this.AllDataGrid.Items.Add(gvItem);
+                Panel control = this.GetControl((Control)this.SettingsForm, "gpHeader") as Panel;
+                if (control == null)
+                    return;
+                if (!control.Controls.ContainsKey(this.key))
+                {
+                    searchPanel = this.GetSearchPanel(control.Width, this.key);
+                    control.Controls.Add((Control)searchPanel);
+                    ((IEnumerable<Control>)control.Controls.Find(this.key, true)).FirstOrDefault<Control>().BringToFront();
 
-                (searchPanel.Controls[0] as TextBox).Text = "_";
-                Timer t = new Timer();
-                t.Interval = 50;
-                t.Enabled = true;
-                t.Tick += T_Tick;
+                    Loading = true;
+                    (searchPanel.Controls[0] as TextBox).Text = "_";
+                    Timer t = new Timer();
+                    t.Interval = 50;
+                    t.Enabled = true;
+                    t.Tick += T_Tick;
+                }
             }
         }
 
@@ -88,6 +93,7 @@ namespace CommunityPlugin.Non_Native_Modifications
             (searchPanel.Controls[0] as TextBox).Text = "";
             Timer t = sender as Timer;
             t.Enabled = false;
+            Loading = false;
         }
 
         private FlowLayoutPanel GetSearchPanel(int headerWidth, string key)
