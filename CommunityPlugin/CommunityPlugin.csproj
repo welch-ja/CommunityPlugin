@@ -133,6 +133,10 @@
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="Reporting, Version=19.4.0.4, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\SmartClientCache\Apps\UAC\Ellie Mae\xIHR5EqGa7zPnRG0YpD5z4TPAB0=\Encompass360\Reporting.dll</HintPath>
+    </Reference>
     <Reference Include="SetupUI, Version=19.4.0.4, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\SmartClientCache\Apps\UAC\Ellie Mae\xIHR5EqGa7zPnRG0YpD5z4TPAB0=\Encompass360\SetupUI.dll</HintPath>
@@ -160,6 +164,7 @@
     <Compile Include="Non Native Modifications\FormWrapper.cs" />
     <Compile Include="Non Native Modifications\GridSearch.cs" />
     <Compile Include="Non Native Modifications\Pipeline\OpenReadOnly.cs" />
+    <Compile Include="Non Native Modifications\Pipeline\PipelineAdvancedSearch.cs" />
     <Compile Include="Non Native Modifications\Pipeline\PipelineColor.cs" />
     <Compile Include="Non Native Modifications\RuleLock.cs" />
     <Compile Include="Non Native Modifications\SideMenu\Controls\CustomLinkLabel.cs">
@@ -183,6 +188,7 @@
     <Compile Include="Non Native Modifications\SideMenu\UserControls\LoanInformation.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Non Native Modifications\TopMenu\AdvancedSearchForm.cs" />
     <Compile Include="Non Native Modifications\TopMenu\Impersonate.cs" />
     <Compile Include="Non Native Modifications\TopMenu\Impersonate_Form.cs">
       <SubType>Form</SubType>
@@ -203,10 +209,14 @@
     <Compile Include="Objects\Args\FormOpenedArgs.cs" />
     <Compile Include="Objects\Enums\CloneBizRuleType.cs" />
     <Compile Include="Objects\Enums\CloneCondition.cs" />
+    <Compile Include="Objects\Enums\FrequencyType.cs" />
     <Compile Include="Objects\Enums\LinkType.cs" />
     <Compile Include="Objects\Extension\WindowsFormsExtensions.cs" />
+    <Compile Include="Objects\Factories\EmailFactory.cs" />
+    <Compile Include="Objects\Helpers\AutoMailerCDO.cs" />
     <Compile Include="Objects\Helpers\CDOHelper.cs" />
     <Compile Include="Objects\Helpers\EncompassHelper.cs" />
+    <Compile Include="Objects\Helpers\FilterCDOHelper.cs" />
     <Compile Include="Objects\Helpers\RuleCDOHelper.cs" />
     <Compile Include="Objects\Interface\AbstractControlDescriptionProvider.cs" />
     <Compile Include="Objects\Interface\IBeforeCommit.cs" />
@@ -214,6 +224,7 @@
     <Compile Include="Objects\Interface\IBorrowerPairChanged.cs" />
     <Compile Include="Objects\Interface\ICommitted.cs" />
     <Compile Include="Objects\Interface\IDataExchangeReceived.cs" />
+    <Compile Include="Objects\Interface\IFactory.cs" />
     <Compile Include="Objects\Interface\IFieldChange.cs" />
     <Compile Include="Objects\Interface\ILoanMenuControl.cs" />
     <Compile Include="Objects\Interface\ILogEntryAdded.cs" />
@@ -229,12 +240,17 @@
     <Compile Include="Objects\Interface\InterfaceHelper.cs" />
     <Compile Include="Objects\Interface\IPlugin.cs" />
     <Compile Include="Objects\Interface\ITabChanged.cs" />
+    <Compile Include="Objects\Interface\ITask.cs" />
     <Compile Include="Objects\Interface\LoanMenuControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Objects\Models\AutoMailerCDORoot.cs" />
+    <Compile Include="Objects\Models\BlockingCollectionQueue.cs" />
     <Compile Include="Objects\Models\CDO.cs" />
     <Compile Include="Objects\Models\CloneBizRuleInfo.cs" />
     <Compile Include="Objects\Models\EncompassFieldInfo.cs" />
+    <Compile Include="Objects\Models\FilterCDO.cs" />
+    <Compile Include="Objects\Models\MailTrigger.cs" />
     <Compile Include="Objects\Models\RuleLockCDO.cs" />
     <Compile Include="Objects\Models\RuleLockInfo.cs" />
     <Compile Include="Objects\Models\HomeCounselor.cs" />
@@ -256,6 +272,7 @@
     </Compile>
     <Compile Include="Standard Plugins\AutomateInputFormSet.cs" />
     <Compile Include="Non Native Modifications\Doorbell.cs" />
+    <Compile Include="Standard Plugins\Automator.cs" />
     <Compile Include="Standard Plugins\Example.cs" />
     <Compile Include="Standard Plugins\Forms\CodebaseAssemblies\SettingsExtract\Attach_Sample.cs" />
     <Compile Include="Standard Plugins\Forms\CodebaseAssemblies\SettingsExtract\Form_Example.cs">
