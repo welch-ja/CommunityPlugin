@@ -1,11 +1,15 @@
 ﻿using EllieMae.EMLite.ClientServer;
+using EllieMae.EMLite.ContactUI;
 using EllieMae.EMLite.DataEngine;
 using EllieMae.Encompass.Automation;
 using EllieMae.Encompass.BusinessObjects.Loans;
 using EllieMae.Encompass.BusinessObjects.Users;
+using EllieMae.Encompass.Collections;
+using EllieMae.Encompass.Reporting;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Mail;
 using System.Reflection;
 using System.Windows.Forms;
 
@@ -28,6 +32,29 @@ namespace CommunityPlugin.Objects.Helpers
             get
             {
                 return EncompassHelper.User.Personas?.Cast<Persona>().LastOrDefault().Name ?? string.Empty;
+            }
+        }
+        public static string[] GetReportValues(string[] fields, string guid)
+        {
+            string[] result = new string[fields.Length];
+            StringList fieldsToAdd = new StringList();
+            foreach (string field in fields)
+                fieldsToAdd.Add($"Fields.{field}");
+            LoanReportData data = EncompassApplication.Session.Reports.SelectReportingFieldsForLoan(guid, fieldsToAdd);
+            for (int i = 0; i < fields.Length; i++)
+                result[i] = data[$"Fields.{fields[i]}"].ToString();
+
+            return result;
+        }
+        public static void SendEmail(MailMessage Message)
+        {
+            try
+            {
+                ContactUtils.SendMail(Message);
+            }
+            catch (Exception ex)
+            {
+                Logger.HandleError(ex, nameof(SendEmail));
             }
         }
 
