@@ -189,6 +189,13 @@
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Non Native Modifications\TopMenu\AdvancedSearchForm.cs" />
+    <Compile Include="Non Native Modifications\TopMenu\AutoMailer.cs" />
+    <Compile Include="Non Native Modifications\TopMenu\AutoMailer_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Non Native Modifications\TopMenu\AutoMailer_Form.Designer.cs">
+      <DependentUpon>AutoMailer_Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Non Native Modifications\TopMenu\Impersonate.cs" />
     <Compile Include="Non Native Modifications\TopMenu\Impersonate_Form.cs">
       <SubType>Form</SubType>
@@ -291,6 +298,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Non Native Modifications\SideMenu\UserControls\LoanInformation.resx">
       <DependentUpon>LoanInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Non Native Modifications\TopMenu\AutoMailer_Form.resx">
+      <DependentUpon>AutoMailer_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Non Native Modifications\TopMenu\Impersonate_Form.resx">
       <DependentUpon>Impersonate_Form.cs</DependentUpon>
