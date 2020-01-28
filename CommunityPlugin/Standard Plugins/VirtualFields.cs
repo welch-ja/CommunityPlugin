@@ -1,6 +1,7 @@
 ﻿using CommunityPlugin.Objects;
 using CommunityPlugin.Objects.Helpers;
 using CommunityPlugin.Objects.Interface;
+using EllieMae.Encompass.Automation;
 using EllieMae.Encompass.BusinessObjects.Loans;
 using EllieMae.Encompass.BusinessObjects.Loans.Logging;
 using EllieMae.Encompass.Collections;
@@ -24,8 +25,11 @@ namespace CommunityPlugin.Standard_Plugins
 
         public override void LoanOpened(object sender, EventArgs e)
         {
-            EncompassHelper.Set("CX.LOANOPEN", string.Empty);
-            EncompassHelper.Set("CX.LOANOPEN", "X");
+            if (EncompassApplication.Session.Loans.FieldDescriptors.CustomFields.Contains("CX.LOANOPEN"))
+            {
+                EncompassHelper.Set("CX.LOANOPEN", string.Empty);
+                EncompassHelper.Set("CX.LOANOPEN", "X");
+            }
 
             DocReceivedFields = EncompassHelper.GetPrefixedFields("CX.DOCRECEIVED.");
             DocAttachmentFields = EncompassHelper.GetPrefixedFields("CX.DOCATTACH.");
