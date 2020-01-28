@@ -15,9 +15,6 @@ namespace CommunityPlugin.Objects
 
         public static bool CheckAccess(string pluginName, bool menu = false, bool loan = false)
         {
-            if (!EncompassHelper.User.ID.Equals("zsharkey") && !EncompassHelper.User.ID.Equals("rulelock"))
-                return false;
-
             if (EncompassHelper.IsTest() || CDOHelper.CDO.CommunitySettings.SuperAdminRun)
                 return true;
 
