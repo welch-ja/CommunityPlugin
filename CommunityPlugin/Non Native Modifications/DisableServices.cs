@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace CommunityPlugin.Non_Native_Modifications
 {
-    public class DisableServices:Plugin, ITabChanged
+    public class DisableServices:Plugin, ILoanTabChanged
     {
         private string ServicesToDisable;
 
@@ -20,21 +20,16 @@ namespace CommunityPlugin.Non_Native_Modifications
             return PluginAccess.CheckAccess(nameof(DisableServices));
         }
 
-        public override void TabChanged(object sender, EventArgs e)
+        public override void LoanTabChanged(object sender, EventArgs e)
         {
             bool shouldRun = EncompassApplication.Session.Loans.FieldDescriptors.CustomFields.Cast<FieldDescriptor>().Any(x => x.FieldID.Equals("CX.DISABLE.SERVICES"));
             if (!shouldRun)
                 return;
 
-            TabControl Tabs = sender as TabControl;
-            TabPage tabPage = Tabs.TabPages[Tabs.SelectedIndex];
-            if (tabPage != null && tabPage.Name.Equals("loanTabPage"))
-            {
-                Timer t = new Timer();
-                t.Interval = 1000;
-                t.Tick += T_Tick;
-                t.Enabled = true;
-            }
+            Timer t = new Timer();
+            t.Interval = 1000;
+            t.Tick += T_Tick;
+            t.Enabled = true;
         }
 
         private void T_Tick(object sender, EventArgs e)

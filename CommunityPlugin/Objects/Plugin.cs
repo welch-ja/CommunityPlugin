@@ -6,10 +6,11 @@ using EllieMae.Encompass.BusinessObjects;
 using EllieMae.Encompass.BusinessObjects.Loans;
 using EllieMae.Encompass.Client;
 using System;
+using System.Windows.Forms;
 
 namespace CommunityPlugin.Objects
 {
-    public abstract class Plugin: IPlugin
+    public abstract class Plugin : IPlugin
     {
         public abstract bool Authorized();
 
@@ -38,7 +39,7 @@ namespace CommunityPlugin.Objects
                 EncompassApplication.LoanOpened += Base_LoanOpened;
             }
 
-            if (typeof(ILogin).IsAssignableFrom(GetType()) || typeof(ITabChanged).IsAssignableFrom(GetType()))
+            if (typeof(ILogin).IsAssignableFrom(GetType()) || typeof(ITabChanged).IsAssignableFrom(GetType()) || typeof(ILoanTabChanged).IsAssignableFrom(GetType()) || typeof(IPipelineTabChanged).IsAssignableFrom(GetType()))
             {
                 EncompassApplication.Login -= Base_Login;
                 EncompassApplication.Login += Base_Login;
@@ -208,7 +209,7 @@ namespace CommunityPlugin.Objects
         }
         private void Base_BeforeMilestoneCompleted(object sender, EllieMae.Encompass.BusinessObjects.Loans.CancelableMilestoneEventArgs e)
         {
-            BeforeMilestoneCompleted(sender, e); 
+            BeforeMilestoneCompleted(sender, e);
         }
 
         public virtual void Committed(object sender, EventArgs e)
@@ -314,10 +315,29 @@ namespace CommunityPlugin.Objects
         {
             throw new ImplementationException(GetType().Name, nameof(ITabChanged), nameof(TabChanged));
         }
+
+        public virtual void LoanTabChanged(object sender, EventArgs e)
+        {
+            throw new ImplementationException(GetType().Name, nameof(ITabChanged), nameof(LoanTabChanged));
+        }
+
+        public virtual void PipelineTabChanged(object sender, EventArgs e)
+        {
+            throw new ImplementationException(GetType().Name, nameof(ITabChanged), nameof(PipelineTabChanged));
+        }
+
         private void Base_TabChanged(object sender, EventArgs e)
         {
             try
             {
+                TabControl tabs = sender as TabControl;
+                TabPage page = tabs.TabPages[tabs.SelectedIndex];
+                if (page != null && page.Name.Equals("loanTabPage"))
+                    LoanTabChanged(sender, e);
+                else if (page != null && page.Name.Equals("pipelineTabPage"))
+                    PipelineTabChanged(sender, e);
+
+
                 TabChanged(sender, e);
             }
             catch (Exception ex)

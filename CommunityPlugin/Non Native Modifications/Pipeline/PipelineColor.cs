@@ -3,33 +3,21 @@ using CommunityPlugin.Objects.Interface;
 using EllieMae.EMLite.DataEngine;
 using EllieMae.EMLite.UI;
 using System;
-using System.Collections.Generic;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace CommunityPlugin.Non_Native_Modifications
 {
-    public class PipelineColor : Plugin, ITabChanged
+    public class PipelineColor : Plugin, IPipelineTabChanged
     {
         public override bool Authorized()
         {
             return PluginAccess.CheckAccess(nameof(PipelineColor));
         }
 
-        public override void TabChanged(object sender, EventArgs e)
+        public override void PipelineTabChanged(object sender, EventArgs e)
         {
             try
             {
-                TabControl tab = sender as TabControl;
-                if (tab.SelectedIndex < 0)
-                    return;
-                TabPage tabPage = tab.TabPages[tab.SelectedIndex];
-                if (tabPage == null || !tabPage.Name.Contains("pipeline"))
-                    return;
-
                 GridView pipeline = FormWrapper.GetPipeline();
                 pipeline.Items.Change += Items_Change;
 

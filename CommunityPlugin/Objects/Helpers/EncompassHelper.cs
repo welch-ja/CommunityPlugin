@@ -1,6 +1,7 @@
 ﻿using EllieMae.EMLite.ClientServer;
 using EllieMae.EMLite.ContactUI;
 using EllieMae.EMLite.DataEngine;
+using EllieMae.EMLite.RemotingServices;
 using EllieMae.Encompass.Automation;
 using EllieMae.Encompass.BusinessObjects.Loans;
 using EllieMae.Encompass.BusinessObjects.Users;
@@ -103,7 +104,7 @@ namespace CommunityPlugin.Objects.Helpers
 
         public static SessionObjects SessionObjects
         {
-            get{ return EncompassApplication.Session.GetType().GetProperties(BindingFlags.Instance | BindingFlags.NonPublic).Single(x => x.Name.Equals("SessionObjects")).GetValue(EncompassApplication.Session) as SessionObjects; }
+            get { return RemoteSession.SessionObjects; }
         }
         public static void ShowOnTop(string Title, string Message)
         {
