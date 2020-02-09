@@ -5,12 +5,17 @@ using System.Windows.Forms;
 
 namespace CommunityPlugin.Non_Native_Modifications.SideMenu
 {
-    public class SideMenu : Plugin, ITabChanged
+    public class SideMenu : Plugin, ITabChanged, ILoanTabChanged
     {
         public override bool Authorized()
         {
             return PluginAccess.CheckAccess(nameof(SideMenu));
         }
+        public override void LoanTabChanged(object sender, EventArgs e)
+        {
+            SideMenuUI.CreateMenu(PluginAccess.CheckAccess(nameof(SideMenu), true, true));
+        }
+
         public override void TabChanged(object sender, EventArgs e)
         {
             try
@@ -21,8 +26,6 @@ namespace CommunityPlugin.Non_Native_Modifications.SideMenu
                 TabPage tabPage = tabControl.TabPages[tabControl.SelectedIndex];
                 if (tabPage == null || !tabPage.Name.Contains("loanTabPage"))
                     SideMenuUI.Closing();
-                else
-                    SideMenuUI.CreateMenu(PluginAccess.CheckAccess(nameof(SideMenu), true, true));
             }
             catch (Exception ex)
             {

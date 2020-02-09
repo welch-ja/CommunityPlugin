@@ -13,7 +13,7 @@ using System.Windows.Forms;
 
 namespace CommunityPlugin.Non_Native_Modifications
 {
-    public class Doorbell : Plugin, ILogin, ILoanClosing, ITabChanged, IDataExchangeReceived
+    public class Doorbell : Plugin, ILogin, ILoanClosing, IPipelineTabChanged, IDataExchangeReceived
     {
         private bool Hide;
         private ToolStripItem DoorBellItem;
@@ -43,15 +43,8 @@ namespace CommunityPlugin.Non_Native_Modifications
             DingBackBorrower = string.Empty;
         }
 
-        public override void TabChanged(object sender, EventArgs e)
+        public override void PipelineTabChanged(object sender, EventArgs e)
         {
-            TabControl tabControl = sender as TabControl;
-            if (tabControl.SelectedIndex < 0)
-                return;
-            TabPage tabPage = tabControl.TabPages[tabControl.SelectedIndex];
-            if (tabPage == null || !tabPage.Name.Contains("pipeline"))
-                return;
-
             Pipeline = FormWrapper.GetPipeline();
             Pipeline.ContextMenuStrip.Opened += ContextMenuStrip_Opened;
         }

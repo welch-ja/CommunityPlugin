@@ -10,9 +10,8 @@ using System.Windows.Forms;
 
 namespace CommunityPlugin.Non_Native_Modifications.Pipeline
 {
-    public class OpenReadOnly : Plugin, ITabChanged
+    public class OpenReadOnly : Plugin, IPipelineTabChanged
     {
-        private TabControl tab = (TabControl)null;
         private bool Added;
         private GridView PipelineGrid;
 
@@ -21,16 +20,10 @@ namespace CommunityPlugin.Non_Native_Modifications.Pipeline
             return PluginAccess.CheckAccess(nameof(OpenReadOnly), false, false);
         }
 
-        public override void TabChanged(object sender, EventArgs e)
+        public override void PipelineTabChanged(object sender, EventArgs e)
         {
             try
             {
-                tab = sender as TabControl;
-                if (tab.SelectedIndex < 0)
-                    return;
-                TabPage tabPage = tab.TabPages[tab.SelectedIndex];
-                if (tabPage == null || !tabPage.Name.Contains("pipeline"))
-                    return;
                 AddOrRemoveContextItem();
             }
             catch (Exception ex)

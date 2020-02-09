@@ -233,6 +233,8 @@
     <Compile Include="Objects\Helpers\CDOHelper.cs" />
     <Compile Include="Objects\Helpers\EncompassHelper.cs" />
     <Compile Include="Objects\Helpers\FilterCDOHelper.cs" />
+    <Compile Include="Objects\Helpers\PipelineFilterCDO.cs" />
+    <Compile Include="Objects\Helpers\PipelineFilterCDORoot.cs" />
     <Compile Include="Objects\Helpers\RuleCDOHelper.cs" />
     <Compile Include="Objects\Interface\AbstractControlDescriptionProvider.cs" />
     <Compile Include="Objects\Interface\IBeforeCommit.cs" />
@@ -243,6 +245,7 @@
     <Compile Include="Objects\Interface\IFactory.cs" />
     <Compile Include="Objects\Interface\IFieldChange.cs" />
     <Compile Include="Objects\Interface\ILoanMenuControl.cs" />
+    <Compile Include="Objects\Interface\ILoanTabChanged.cs" />
     <Compile Include="Objects\Interface\ILogEntryAdded.cs" />
     <Compile Include="Objects\Interface\ILogEntryChanged.cs" />
     <Compile Include="Objects\Interface\ILogEntryRemoved.cs" />
@@ -254,6 +257,7 @@
     <Compile Include="Objects\Interface\ILoanOpened.cs" />
     <Compile Include="Objects\Interface\ILogin.cs" />
     <Compile Include="Objects\Interface\InterfaceHelper.cs" />
+    <Compile Include="Objects\Interface\IPipelineTabChanged.cs" />
     <Compile Include="Objects\Interface\IPlugin.cs" />
     <Compile Include="Objects\Interface\ITabChanged.cs" />
     <Compile Include="Objects\Interface\ITask.cs" />
@@ -267,6 +271,7 @@
     <Compile Include="Objects\Models\EncompassFieldInfo.cs" />
     <Compile Include="Objects\Models\FilterCDO.cs" />
     <Compile Include="Objects\Models\MailTrigger.cs" />
+    <Compile Include="Objects\Models\PipelineFilter.cs" />
     <Compile Include="Objects\Models\RuleLockCDO.cs" />
     <Compile Include="Objects\Models\RuleLockInfo.cs" />
     <Compile Include="Objects\Models\HomeCounselor.cs" />

@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace CommunityPlugin.Non_Native_Modifications
 {
-    public class AppraiserDialog:Plugin, ILogin, ITabChanged
+    public class AppraiserDialog:Plugin, ILogin
     {
         private Form AppraiserDialogForm;
 

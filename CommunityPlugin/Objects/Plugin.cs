@@ -334,10 +334,11 @@ namespace CommunityPlugin.Objects
                 TabPage page = tabs.TabPages[tabs.SelectedIndex];
                 if (page != null && page.Name.Equals("loanTabPage"))
                     LoanTabChanged(sender, e);
-                else if (page != null && page.Name.Equals("pipeline"))
+                else if (page != null && page.Name.Equals("pipelineTabPage"))
                     PipelineTabChanged(sender, e);
-                else
-                    TabChanged(sender, e);
+
+
+                TabChanged(sender, e);
             }
             catch (Exception ex)
             {

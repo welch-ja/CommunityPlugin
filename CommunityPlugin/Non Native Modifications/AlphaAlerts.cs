@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace CommunityPlugin.Non_Native_Modifications
 {
-    public class AlphaAlerts : Plugin, ITabChanged
+    public class AlphaAlerts : Plugin, ILoanTabChanged
     {
         private bool Should => EncompassHelper.Val("CX.ALERTS.ALPHA").ToString().Equals("X");
         public override bool Authorized()
@@ -15,17 +15,12 @@ namespace CommunityPlugin.Non_Native_Modifications
             return PluginAccess.CheckAccess(nameof(AlphaAlerts));
         }
 
-        public override void TabChanged(object sender, EventArgs e)
+        public override void LoanTabChanged(object sender, EventArgs e)
         {
-            TabControl tabs = sender as TabControl;
-            TabPage page = tabs.TabPages[tabs.SelectedIndex];
-            if(page != null && page.Name.Equals("loanTabPage"))
-            {
-                Timer t = new Timer();
-                t.Interval = 1000;
-                t.Enabled = true;
-                t.Tick += T_Tick;
-            }
+            Timer t = new Timer();
+            t.Interval = 1000;
+            t.Enabled = true;
+            t.Tick += T_Tick;
         }
 
         private void T_Tick(object sender, EventArgs e)
