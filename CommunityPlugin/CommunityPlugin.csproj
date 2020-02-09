@@ -118,6 +118,10 @@
     <Reference Include="EMCommon">
       <HintPath>..\..\..\..\..\..\SmartClientCache\Apps\UAC\Ellie Mae\xIHR5EqGa7zPnRG0YpD5z4TPAB0=\Encompass360\EMCommon.dll</HintPath>
     </Reference>
+    <Reference Include="EMePass, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\SmartClientCache\Apps\UAC\Ellie Mae\xIHR5EqGa7zPnRG0YpD5z4TPAB0=\Encompass360\EMePass.dll</HintPath>
+    </Reference>
     <Reference Include="EMInput, Version=19.4.0.4, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\SmartClientCache\Apps\UAC\Ellie Mae\xIHR5EqGa7zPnRG0YpD5z4TPAB0=\Encompass360\EMInput.dll</HintPath>
@@ -165,6 +169,7 @@
   <ItemGroup>
     <Compile Include="Non Native Modifications\AlphaAlerts.cs" />
     <Compile Include="Non Native Modifications\BackAndForward.cs" />
+    <Compile Include="Non Native Modifications\DisableServices.cs" />
     <Compile Include="Non Native Modifications\FormWrapper.cs" />
     <Compile Include="Non Native Modifications\GridSearch.cs" />
     <Compile Include="Non Native Modifications\Pipeline\OpenReadOnly.cs" />
@@ -288,6 +293,7 @@
     <Compile Include="Non Native Modifications\Doorbell.cs" />
     <Compile Include="Standard Plugins\Automator.cs" />
     <Compile Include="Standard Plugins\Example.cs" />
+    <Compile Include="Non Native Modifications\Dialog\AppraiserDialog.cs" />
     <Compile Include="Standard Plugins\Forms\CodebaseAssemblies\SettingsExtract\Attach_Sample.cs" />
     <Compile Include="Standard Plugins\Forms\CodebaseAssemblies\SettingsExtract\Form_Example.cs">
       <SubType>Component</SubType>
