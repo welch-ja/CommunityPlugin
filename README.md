@@ -23,14 +23,13 @@
 - SettingExtract
 - SideMenu
 - VirtualFields
-
-New#
--Automate Emails
--Limit Services/Disable Services
--Open Input Form in Separate Window
--Lock Business Rules
--Alphabetize Alerts
--Saveable Pipeline Filters
+- New#
+- Automate Emails
+- Limit Services/Disable Services
+- Open Input Form in Separate Window
+- Lock Business Rules
+- Alphabetize Alerts
+- Saveable Pipeline Filters
 
 
 ## AutomateInputFormSet: 
