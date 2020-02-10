@@ -24,6 +24,14 @@
 - SideMenu
 - VirtualFields
 
+New#
+-Automate Emails
+-Limit Services/Disable Services
+-Open Input Form in Separate Window
+-Lock Business Rules
+-Alphabetize Alerts
+-Saveable Pipeline Filters
+
 
 ## AutomateInputFormSet: 
 This is an option to setup a folder inside your InputFormSets Base Folder as 'Persona'. Inside you can create a workflow to apply IFS when a loan opens. You can use all of these prefixes and they apply in this order: 
