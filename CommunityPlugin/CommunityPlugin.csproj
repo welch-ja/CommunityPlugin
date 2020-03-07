@@ -172,6 +172,7 @@
     <Compile Include="Non Native Modifications\DisableServices.cs" />
     <Compile Include="Non Native Modifications\FormWrapper.cs" />
     <Compile Include="Non Native Modifications\GridSearch.cs" />
+    <Compile Include="Non Native Modifications\LoanCount.cs" />
     <Compile Include="Non Native Modifications\Pipeline\OpenReadOnly.cs" />
     <Compile Include="Non Native Modifications\Pipeline\PipelineAdvancedSearch.cs" />
     <Compile Include="Non Native Modifications\Pipeline\PipelineColor.cs" />
