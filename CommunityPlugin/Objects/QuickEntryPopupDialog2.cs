@@ -37,7 +37,7 @@ namespace CommunityPlugin.Objects
         {
             InitializeComponent();
             this.Name = formTitle;
-            this.Text = formTitle;
+            this.Text = formTitle.Replace("pop","");
             this.Size = new Size(sizeWidth, sizeHeight);
             LoanScreen Screen = new LoanScreen(Session.DefaultInstance);
             this.Controls.Add(Screen);
@@ -70,7 +70,6 @@ namespace CommunityPlugin.Objects
             this.panelMiddle.SuspendLayout();
             this.SuspendLayout();
             this.panelBottom.Controls.Add((System.Windows.Forms.Control)this.btnOK);
-            this.panelBottom.Controls.Add((System.Windows.Forms.Control)this.emHelpLink1);
             this.panelBottom.Controls.Add((System.Windows.Forms.Control)this.btnClose);
             this.panelBottom.Dock = DockStyle.Bottom;
             this.panelBottom.Location = new Point(0, 439);
@@ -143,18 +142,6 @@ namespace CommunityPlugin.Objects
             this.additionalPanel.Name = "additionalPanel";
             this.additionalPanel.Size = new Size(396, 246);
             this.additionalPanel.TabIndex = 7;
-            this.panelInstruction.Controls.Add((System.Windows.Forms.Control)this.labelInstruction);
-            this.panelInstruction.Dock = DockStyle.Top;
-            this.panelInstruction.Location = new Point(0, 0);
-            this.panelInstruction.Name = "panelInstruction";
-            this.panelInstruction.Size = new Size(682, 44);
-            this.panelInstruction.TabIndex = 9;
-            this.labelInstruction.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            this.labelInstruction.Location = new Point(12, 9);
-            this.labelInstruction.Name = "labelInstruction";
-            this.labelInstruction.Size = new Size(667, 30);
-            this.labelInstruction.TabIndex = 0;
-            this.labelInstruction.Text = "For loans planned for GSE delivery, enter details for Sections M and N to ensure data points required for the UCD export are included in the loan file.";
             this.panelMiddle.Controls.Add((System.Windows.Forms.Control)this.quickTab);
             this.panelMiddle.Controls.Add((System.Windows.Forms.Control)this.workPanel);
             this.panelMiddle.Dock = DockStyle.Fill;
@@ -165,7 +152,6 @@ namespace CommunityPlugin.Objects
             this.AutoScaleBaseSize = new Size(5, 13);
             this.ClientSize = new Size(682, 487);
             this.Controls.Add((System.Windows.Forms.Control)this.panelMiddle);
-            this.Controls.Add((System.Windows.Forms.Control)this.panelInstruction);
             this.Controls.Add((System.Windows.Forms.Control)this.panelBottom);
             this.FormBorderStyle = FormBorderStyle.FixedDialog;
             this.KeyPreview = true;
