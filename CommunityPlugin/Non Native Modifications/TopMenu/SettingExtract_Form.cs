@@ -62,6 +62,7 @@ namespace CommunityPlugin.Non_Native_Modifications.TopMenu
                 AddSingle("Downloading LoanFolderAccess Settings", "LoanFolderAccess.json", Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(EncompassHelper.SessionObjects.BpmManager.GetLoanFolderAccessRules())), archive, 75, worker);
                 AddSingle("Downloading MilestoneTasks Settings", "MilestoneTasks.json", Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(EncompassHelper.SessionObjects.ConfigurationManager.GetMilestoneTasks(dts.ToArray().Select(x => x.Guid).ToArray()))), archive, 80, worker);
                 AddSingle("Downloading Triggers Settings", "Triggers.json", Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(EncompassHelper.SessionObjects.BpmManager.GetRules(BizRuleType.Triggers))), archive, 85, worker);
+                AddSingle("Downloading AutomatedConditions", "AutomatedConditions.json", Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(((BpmManager)(AutomatedConditionBpmManager)Session.BPM.GetBpmManager(BpmCategory.AutomatedConditions)).GetAllRulesFromDatabase())), archive, 90, worker);
 
                 archive.Dispose();
 

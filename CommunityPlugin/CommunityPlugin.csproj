@@ -172,9 +172,17 @@
     <Compile Include="Non Native Modifications\DisableServices.cs" />
     <Compile Include="Non Native Modifications\FormWrapper.cs" />
     <Compile Include="Non Native Modifications\GridSearch.cs" />
+    <Compile Include="Non Native Modifications\LoanCount.cs" />
     <Compile Include="Non Native Modifications\Pipeline\OpenReadOnly.cs" />
     <Compile Include="Non Native Modifications\Pipeline\PipelineAdvancedSearch.cs" />
     <Compile Include="Non Native Modifications\Pipeline\PipelineColor.cs" />
+    <Compile Include="Non Native Modifications\Pipeline\Reassign.cs" />
+    <Compile Include="Non Native Modifications\Pipeline\ReassignmentDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Non Native Modifications\Pipeline\ReassignmentDialog.Designer.cs">
+      <DependentUpon>ReassignmentDialog.cs</DependentUpon>
+    </Compile>
     <Compile Include="Non Native Modifications\RuleLock.cs" />
     <Compile Include="Non Native Modifications\SideMenu\Controls\CustomLinkLabel.cs">
       <SubType>Component</SubType>
@@ -312,6 +320,9 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <EmbeddedResource Include="Non Native Modifications\Pipeline\ReassignmentDialog.resx">
+      <DependentUpon>ReassignmentDialog.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Non Native Modifications\SideMenu\UserControls\FieldLookup.resx">
       <DependentUpon>FieldLookup.cs</DependentUpon>
     </EmbeddedResource>
