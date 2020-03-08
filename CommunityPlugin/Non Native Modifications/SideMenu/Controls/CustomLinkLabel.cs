@@ -42,6 +42,9 @@ namespace CommunityPlugin.Non_Native_Modifications.SideMenu.Controls
           string InternetLink,
           bool IsMi = false)
         {
+            if (EncompassHelper.Loan == null)
+                return;
+
             string str = "RE: " + EncompassHelper.Loan.Fields["37"].FormattedValue + ", " + EncompassHelper.Loan.Fields["36"].FormattedValue + ", " + EncompassHelper.Loan.LoanNumber;
             this.Dock = DockStyle.Fill;
             this.AutoSize = true;
