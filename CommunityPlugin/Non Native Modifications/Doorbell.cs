@@ -100,8 +100,8 @@ namespace CommunityPlugin.Non_Native_Modifications
 
         public override void DataExchangeReceived(object sender, DataExchangeEventArgs e)
         {
-            RuleLockInfo info = JsonConvert.DeserializeObject<RuleLockInfo>(e.Data.ToString());
-            if (!Hide && info == null)
+            bool isDoorbell = e.Data.ToString().Contains("Is Out Of") || e.Data.ToString().Contains("Trying to Access");
+            if (!Hide && isDoorbell)
             {
                 Hide = false;
                 bool exit = e.Data.ToString().Contains("Exit");

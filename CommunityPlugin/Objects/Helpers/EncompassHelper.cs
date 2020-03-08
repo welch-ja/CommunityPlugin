@@ -113,6 +113,9 @@ namespace CommunityPlugin.Objects.Helpers
 
         public static string Val(string FieldID)
         {
+            if (EncompassApplication.CurrentLoan == null)
+                return string.Empty;
+
             if (!EncompassApplication.Session.Loans.FieldDescriptors[FieldID].MultiInstance)
                 return EncompassApplication.CurrentLoan.Fields[FieldID].Value?.ToString() ?? string.Empty;
             else

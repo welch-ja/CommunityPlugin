@@ -229,6 +229,7 @@
       <DependentUpon>SettingExtract_Form.cs</DependentUpon>
     </Compile>
     <Compile Include="Non Native Modifications\TopMenu\TopMenuBase.cs" />
+    <Compile Include="Non Native Modifications\VIP.cs" />
     <Compile Include="Objects\Args\BorrowerPairChangedEventArgs.cs" />
     <Compile Include="Objects\Args\FormOpenedArgs.cs" />
     <Compile Include="Objects\Enums\CloneBizRuleType.cs" />
@@ -244,6 +245,7 @@
     <Compile Include="Objects\Helpers\PipelineFilterCDO.cs" />
     <Compile Include="Objects\Helpers\PipelineFilterCDORoot.cs" />
     <Compile Include="Objects\Helpers\RuleCDOHelper.cs" />
+    <Compile Include="Objects\Helpers\VIPCDO.cs" />
     <Compile Include="Objects\Interface\AbstractControlDescriptionProvider.cs" />
     <Compile Include="Objects\Interface\IBeforeCommit.cs" />
     <Compile Include="Objects\Interface\IBeforeMilestoneCompleted.cs" />
@@ -286,6 +288,7 @@
     <Compile Include="Objects\Models\PluginAccessRight.cs" />
     <Compile Include="Objects\Models\SearchResultField.cs" />
     <Compile Include="Objects\Models\SettingsCDO.cs" />
+    <Compile Include="Objects\Models\VIPRoot.cs" />
     <Compile Include="Objects\Plugin.cs" />
     <Compile Include="Objects\ImplementationException.cs" />
     <Compile Include="Objects\Logger.cs" />

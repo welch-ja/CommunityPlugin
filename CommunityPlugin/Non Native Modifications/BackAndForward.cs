@@ -61,6 +61,9 @@ namespace CommunityPlugin.Non_Native_Modifications
             (sender as Timer).Enabled = false;
             Forward = new Button();
             Back = new Button();
+            if (EncompassApplication.CurrentLoan == null)
+                return;
+
             ListBox listBox1 = FormWrapper.EncompassForm.Controls.Find("emFormMenuBox", true)[0] as ListBox ?? (ListBox)null;
             if (listBox1 != null)
             {
