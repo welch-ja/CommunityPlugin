@@ -19,7 +19,6 @@ namespace CommunityPlugin.Objects
             if (!Authorized())
                 return;
 
-
             LoansScreen loan = (LoansScreen)EncompassApplication.Screens[EncompassScreen.Loans];
             if (typeof(IFormLoaded).IsAssignableFrom(GetType()) && loan != null)
             {
