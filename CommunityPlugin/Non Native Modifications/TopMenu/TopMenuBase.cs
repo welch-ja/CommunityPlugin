@@ -20,7 +20,7 @@ namespace CommunityPlugin.Non_Native_Modifications.TopMenu
         public override void Login(object sender, EventArgs e)
         {
             GradientMenuStrip menu = (GradientMenuStrip)FormWrapper.Find("mainMenu");
-            ToolStripMenuItem communityMenu = new ToolStripMenuItem("WCM Admin Menu");
+            ToolStripMenuItem communityMenu = new ToolStripMenuItem("Community Menu");
             ToolStripMenuItem item = menu.Items[0] as ToolStripMenuItem;
             item.DropDownItems.Add(communityMenu);
             communityMenu.DropDownItems.AddRange(GetDropDownItems());
@@ -29,8 +29,7 @@ namespace CommunityPlugin.Non_Native_Modifications.TopMenu
         private ToolStripItem[] GetDropDownItems()
         {
             active = new List<ToolStripItem>();
-            var types = ((IEnumerable<Type>)this.GetType().Assembly.GetTypes()).Where<Type>((Func<Type, bool>)(type => type.IsSubclassOf(typeof(MenuItemBase)))).ToList<Type>();
-            foreach (Type type in types)
+            foreach (Type type in ((IEnumerable<Type>)this.GetType().Assembly.GetTypes()).Where<Type>((Func<Type, bool>)(type => type.IsSubclassOf(typeof(MenuItemBase)))).ToList<Type>())
             {
                 try
                 {

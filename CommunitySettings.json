@@ -1,8 +1,8 @@
 {	
 	"CommunitySettings":{
 		"SideMenuOpenByDefault": "False",
-		"TestServer": "TEBE11146574",
-		"SuperAdminRun": "True",
+		"TestServer": "TEBE11177289",
+		"SuperAdminRun": "False",
 		"Permission": {
 			"AllAccess": [
 				"SideMenu",
