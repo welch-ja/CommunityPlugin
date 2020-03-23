@@ -183,6 +183,7 @@
     <Compile Include="Non Native Modifications\Pipeline\ReassignmentDialog.Designer.cs">
       <DependentUpon>ReassignmentDialog.cs</DependentUpon>
     </Compile>
+    <Compile Include="Non Native Modifications\Pipeline\ShowColumnField.cs" />
     <Compile Include="Non Native Modifications\RuleLock.cs" />
     <Compile Include="Non Native Modifications\SideMenu\Controls\CustomLinkLabel.cs">
       <SubType>Component</SubType>
