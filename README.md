@@ -11,7 +11,9 @@ Reverse Engineering Encompass - https://drive.google.com/file/d/1b0JPUy5-8RCYW0W
 
 **Introduction:** This Plugin was created as a free way for the community to have a way to modify any part of encompass. This also includes a nice single plugin structure that you can use to further develop this custom to your specifications. Please create the two custom fields as well as uploading the Settings file in IFB. 
 
-**Settings:** In the CommunitySettings File you will see a variety of properties you can change to suite your needs. Please at the very least update the TestServer to your test server that way you can leave the Permission->AllAccess property blank if you are just testing. Every Plugin will be listed below that you can add to the AllAccess section of Permission:
+**Settings:** In the CommunitySettings File you will see a variety of properties you can change to suite your needs. Please at the very least update the TestServer to your test server that way you can leave the Permission->AllAccess property blank if you are just testing. 
+
+**Some of the Solutions include:**
 ,Input Form Automator
 ,Email Trigger Automator 
 ,Task Automator using Blocking Queue
